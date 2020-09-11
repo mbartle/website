@@ -1,0 +1,38 @@
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px; transform: rotate(90deg);}
+    50%  {left:200px; top:200px; transform: rotate(180deg);}
+    75%  {left:0px; top:200px; transform: rotate(270deg);}
+    100% {left:0px; top:0px; transform: rotate(360deg);}
+  }
+
+@keyframes color_change {
+    0% {color: red;}
+    10% {color: blue;}
+    20% {color: orange;}
+    30% {color: yellow;}
+    40% {color: green;}
+    50% {color: purple;}
+    60% {color: pink;}
+    70% {color: skyblue;}
+    80% {color: blueviolet;}
+    90% {color: greenyellow;}
+    100% {color: brown;}
+}
+
+#the_cat {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#welcome {
+    animation-name: color_change;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: large;
+}
+
